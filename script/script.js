@@ -1,14 +1,14 @@
-const email = document.getElementById("txt_email")
+const email = document.getElementsByClassName("txt_email")
 const bnt = document.getElementById("submit-bnt")
 
 
 
 bnt.addEventListener("click", () => {
-        const emailValue = email.value 
+    const emailValue = email.value 
 
-        if (emailValue === "") {
-        
-        } else {
-            alert("Muito bom")
-        }
+    if (emailValue === "") {
+        alert("Coloca um email valido animal")
+    } else {
+        alert("Muito bom")
+    }
 })
