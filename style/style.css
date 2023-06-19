@@ -27,9 +27,14 @@
     box-sizing: border-box;
 }
 
+/* html {
+    width: 100vw;
+    height: 100vh;
+} */
+
 body{
     width: 100vw;
-    height: 95vh;
+    height: 98vh;
 }
 
 main {
@@ -38,7 +43,6 @@ main {
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-bottom: 10px;
     background-image: url(../images/bg-pattern-desktop.svg);
 }
 
@@ -63,29 +67,31 @@ main {
 
 #txt_coming span {
     font-weight: 300;
-    color: var(--Dark-Grayish-Red);
+    color: var(--Desaturated-Red);
 }
 
 #paragraph p {
     font-size: 11px;
     margin: 20px 0px 20px 0px;
     line-height: 20px;
-    color: var(--Dark-Grayish-Red);
+    color: var(--Desaturated-Red);
 }
 
 #email {
     position: relative;
-    
 }
 
 #txt_email {
     width: 100%;
     height: 3rem;
-    border-radius: 30px;
-    border: 1px solid hsl(0, 6%, 24%);
     padding: 20px;
     font-size: 13px;
-    color: var(--Dark-Grayish-Red);
+    border: 1px solid hsl(0, 12%, 82%);
+    border-radius: 30px;
+}
+
+#txt_email::placeholder {
+    color: hsl(0, 6%, 79%);
 }
 
 #email #icon-error{
@@ -104,16 +110,17 @@ main {
     background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    transition: .9s;
 }
 
 #email #icon-arrow:hover {
     background: linear-gradient(135deg,hsl(0, 100%, 98%), hsl(0, 80%, 86%));
-    cursor: pointer;
 }
 
 .right_content {
     width: 45%;
-    height: 100%;
+    height: 100vh;
 }
 
 .right_content img {
@@ -121,7 +128,13 @@ main {
     height: 100%;
 }
 
-
+.erro-mensage {
+    display: flex;
+    font-size: 13px;
+    margin: 5px 0px 0px 20px;
+    color: var(--Soft-Red);
+    visibility: hidden;
+}
 
 .attribution { 
     font-size: 11px; 
