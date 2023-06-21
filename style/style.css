@@ -77,18 +77,19 @@ main {
     color: var(--Desaturated-Red);
 }
 
-#form {
+.form-control {
     position: relative;
 }
 
-#form input {
+.form-control input {
     border-radius: 30px;
     border: 1px solid hsl(0, 10%, 83%);
     padding: 15px 120px 15px 20px;
     font-size: 13px;
 }
 
-#form img {
+.form-control img {
+    display: block;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     padding: 13px 27px 13px 27px;
     border-radius: 35px;
@@ -100,9 +101,46 @@ main {
     transition: 1s;
 }
 
-#form img:hover {
+.form-control img:hover {
     background: linear-gradient(135deg, hsl(0, 0%, 100%),hsla(0, 74%, 74%, 0.838)); 
+} 
+
+.form-control small {
+    display: block;
+    margin: 10px 22px;
+    font-size: 13px;
+    visibility: hidden;
 }
+
+.form-control i {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    visibility: hidden;
+}
+
+.form-control.error i.fa-circle-exclamation{
+    color: var(--Soft-Red);
+}
+
+.form-control.error input{
+    border-color: var(--Soft-Red);
+    color: var(--Soft-Red);
+}
+
+.form-control.error small {
+    color: var(--Soft-Red);
+}
+
+.form-control.success i.fa-circle-check{
+    color: green;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
 
 .right_content {
     width: 45%;
