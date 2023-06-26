@@ -147,11 +147,8 @@ main {
 
 
 .right_content {
-    width: 50%;
+    width: 45%;
     height: 100vh;
-    background-image: url(../images/hero-desktop.jpg);
-    background-repeat: no-repeat;
-
 }
 
 
