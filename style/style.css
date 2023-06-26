@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
     /* main {
         display: flex;
         align-items: center;
@@ -68,7 +68,7 @@ body{
 }
 
 main {
-    min-width: 375px;
+    max-width: 540px;
     min-height: 100%;
 }
 
