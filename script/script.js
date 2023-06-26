@@ -7,10 +7,10 @@ form.addEventListener("submit", (e) => {
     checkInput();
 });
 
-function checkInput() {
+function checkInput(){
     const emailValue = email.value;
 
-    if (emailValue === '') {
+    if (emailValue === "") {
         setErrorFor(email, 'Looks like this is not an email');
     } else if(!checkEmail(emailValue)) {
         setErrorFor(email, 'Please provide a valid email.');
@@ -26,13 +26,13 @@ function setErrorFor(input, message) {
 
     small.innerText = message;
 
-    formControl.className = "formControl error";
+    formControl.className = "form-control error";
 }
 
 function setSuccessFor(input) {
     const formControl = input.parentElement;
 
-    formControl.className = "formControl success";
+    formControl.className = "form-control success";
 }
 
 function checkEmail(email) {
