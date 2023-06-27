@@ -13,7 +13,7 @@ function checkInput(){
     if (emailValue === "") {
         setErrorFor(email, 'Looks like this is not an email');
     } else if(!checkEmail(emailValue)) {
-        setErrorFor(email, 'Please provide a valid email.');
+        setErrorFor(email, 'Please provide a valid email');
     } else {
         setSuccessFor(email);
     }
