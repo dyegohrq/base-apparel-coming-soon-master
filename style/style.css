@@ -72,7 +72,7 @@ header img {
 }
 
 .left p {
-    max-width: 375px;
+    width: 375px;
     text-align: center;
     line-height: 1.8rem;
     font-size: 17px;
