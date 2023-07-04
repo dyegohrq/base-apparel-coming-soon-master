@@ -24,16 +24,19 @@ body {
 }
 
 header {
+    position: absolute;
     padding: 30px;
+    width: 100%;
+    height: auto;
 }
 
 header img {
-    width: 100px;
+    width: 150px;
 }
 
 .container {
     display: flex;
-    max-width: 900px;
+    width: 100%;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -42,6 +45,7 @@ header img {
 .rigth {
     width: 100%;
     height: 250px;
+    margin-top: 80px;
     background-image: url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +65,7 @@ header img {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .5rem;
-    margin: 60px 0px 30px 0px;
+    margin: 60px auto 30px auto;
     color: var(--Desaturated-Red);
     font-weight: 300;
 }
@@ -72,7 +76,7 @@ header img {
 }
 
 .left p {
-    width: 375px;
+    max-width: 380px;
     text-align: center;
     line-height: 1.8rem;
     font-size: 17px;
@@ -82,7 +86,7 @@ header img {
 form {
     position: relative;
     min-width: 375px;
-    height: 60px;
+    height: 55px;
     margin-top: 40px;
 }
 
@@ -92,7 +96,7 @@ form input {
     border-radius: 50px;
     border: 1px solid hsla(0, 27%, 63%, 0.511);
     padding-left: 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 form input::placeholder {
@@ -105,7 +109,7 @@ button {
     top: 0;
     right: 0;
     height: 100%;
-    width: 70px;
+    width: 78px;
     border-radius: 35px;
     border: none;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -123,6 +127,52 @@ button {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (min-width: 900px) {
-    
+@media only screen and (min-width: 900px) {
+
+    body {
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .rigth {
+        width: 80%;
+        height: 100vh;
+        background-image: url(../images/hero-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
+
+    header, .left {
+        display:block;
+        max-width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
+    }
+
+    .left h1 {
+        text-align: left;
+        margin-top: 28vh;
+        font-size: 50px;
+    }
+
+    .left p {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    form {
+        max-width: 380px;
+    }
 }
