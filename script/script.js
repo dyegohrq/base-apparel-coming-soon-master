@@ -1,8 +1,7 @@
-const form = document.getElementsByClassName('form')
-const email = document.getElementById('email')
+const form = document.getElementById("form")
+const email = document.getElementById("email")
 
-
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     checkInput();
@@ -11,12 +10,15 @@ form.addEventListener('submit', (e) => {
 function checkInput() {
     const emailValue = email.value;
 
-    if (emailValue === '') {
-        setErrorFor(email, 'Please provide a valid email');
-    } else {
-        
+    if (emailValue === "") {
+        setErrorFor(email, 'Please provide a valid email.');
+    } else if (!checkEmail(emailValue)) {
+        setErrorFor(email, 'Please enter a valid email.');
     }
 }
+
+
+
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
