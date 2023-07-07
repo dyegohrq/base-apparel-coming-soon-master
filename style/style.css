@@ -139,12 +139,21 @@ button:hover {
     font-size: 15px;
 }
 
+.form-control.success input {
+    border: 1px solid rgb(25, 204, 70);
+}
+
+.form-control.success i.fa-circle-check  {
+    visibility: visible;
+    top: 27px;
+}
+
 .form-control.error input {
     border: 1px solid var(--Soft-Red);
     color: var(--Soft-Red);
 }
 
-.form-control.error i {
+.form-control.error i .icon-error {
     visibility: visible;
 }
 
@@ -162,7 +171,7 @@ button:hover {
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 760px) {
 
     body {
         background-image: url(../images/bg-pattern-desktop.svg);
